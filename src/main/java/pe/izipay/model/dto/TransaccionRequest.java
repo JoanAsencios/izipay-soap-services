@@ -14,7 +14,6 @@ import jakarta.xml.bind.annotation.XmlType;
 @Builder
 @NoArgsConstructor   // constructor sin argumentos requerido por JAXB
 @AllArgsConstructor  // para el builder y otros usos
-
 @XmlRootElement(name = "TransaccionRequest", namespace = "http://izipay.pe/ws/transaction/services")
 @XmlType(propOrder = {
     "transactionId", "transactionCode", "merchantId", "merchantName",
@@ -24,11 +23,9 @@ public class TransaccionRequest {
 
   private String transactionId;
   private String transactionCode;
-  private String merchantId;
-  private String merchantName;
   private double amount;
   private int card;
   private String date;
-  private String serialPOS;
+  private String idTerminal;
 
 }

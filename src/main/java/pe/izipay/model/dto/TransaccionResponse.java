@@ -14,7 +14,6 @@ import jakarta.xml.bind.annotation.XmlType;
 @Builder
 @NoArgsConstructor   // constructor sin argumentos requerido por JAXB
 @AllArgsConstructor  // para el builder y otros usos
-
 @XmlRootElement(name = "TransaccionResponse", namespace = "http://izipay.pe/ws/transaction/services")
 @XmlType(propOrder = {
     "transactionId", "transactionCode", "status", "amount",
