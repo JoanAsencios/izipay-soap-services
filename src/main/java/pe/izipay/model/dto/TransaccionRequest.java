@@ -16,8 +16,8 @@ import jakarta.xml.bind.annotation.XmlType;
 @AllArgsConstructor  // para el builder y otros usos
 @XmlRootElement(name = "TransaccionRequest", namespace = "http://izipay.pe/ws/transaction/services")
 @XmlType(propOrder = {
-    "transactionId", "transactionCode", "merchantId", "merchantName",
-    "amount", "card", "date", "serialPOS"
+    "transactionId", "transactionCode",
+    "amount", "card", "date", "idTerminal"
 })
 public class TransaccionRequest {
 
@@ -26,6 +26,6 @@ public class TransaccionRequest {
   private double amount;
   private int card;
   private String date;
-  private String idTerminal;
+  private int idTerminal;
 
 }
